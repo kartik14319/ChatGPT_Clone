@@ -1,0 +1,67 @@
+.chats {
+    max-width: 700px;
+    overflow-y: auto; /* Changed from scroll to auto */
+    padding: 8rem;
+    max-height: calc(100vh - 200px); /* Added max-height for proper scrolling */
+    
+    /* Custom scrollbar styling */
+    scrollbar-width: thin; /* Firefox */
+    scrollbar-color: black #2d2d2d; /* Firefox: thumb and track */
+}
+
+.chats:hover {
+    scrollbar-color: white #2d2d2d; /* White on hover for Firefox */
+}
+
+/* Webkit browsers (Chrome, Safari, Edge) */
+.chats::-webkit-scrollbar {
+    width: 8px;
+}
+
+.chats::-webkit-scrollbar-track {
+    background: #2d2d2d; /* Dark track */
+    border-radius: 4px;
+}
+
+.chats::-webkit-scrollbar-thumb {
+    background: black; /* Black scrollbar */
+    border-radius: 4px;
+    border: 1px solid #444;
+}
+
+.chats::-webkit-scrollbar-thumb:hover {
+    background: white; /* White on hover */
+    border: 1px solid #666;
+}
+
+.chats::-webkit-scrollbar-thumb:active {
+    background: #cccccc; /* Slightly darker white when clicked */
+}
+
+.userDiv {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 0.9rem;
+}
+
+.gptDiv {
+    text-align: left;
+    font-size: 0.9rem;
+}
+
+.userMessage {
+    background-color: #323232;
+    padding: 10px 20px;
+    border-radius: 14px;
+    margin-left: 15rem;
+    max-width: 500px;
+    width: fit-content;
+}
+
+.hljs {
+    border-radius: 14px !important;
+}
+
+pre {
+    white-space: pre-wrap;
+}
